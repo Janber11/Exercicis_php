@@ -24,4 +24,25 @@ APUNTS
 
         preuAmbIva(100);
         preuAmbIva(100, 0.10);
+
+    Tipus de estrictes
+        declare(strict_types=1);
+
+    L'ambint que veu la funció
+        $botiga = 'BitBazar';
+
+        function mostra(): string {
+            return 'Som a ' . $botiga; // No es veu
+        } // warning undefined variable
+    
+    Funcions que treballen amb arrays
+        function disponibles(array $p): array {
+            $res = [];
+            foreach ($p as $item) {
+                if ($item['stock'] > 0 ) {
+                    $res[] = $item; 
+                }
+            return $res;
+            }
+        }
 */
