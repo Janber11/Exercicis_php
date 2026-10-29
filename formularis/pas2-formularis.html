@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        /* Reseteo básico y centrado global con Flexbox */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            color: #111;
+        }
+
+        /* El contenedor centrado que pedías */
+        form {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            color: #444;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inscripció al festival</h1>
+
+    <!-- action: on van les dades-->
+    <!-- method: com hi van (GET o POST)-->
+    <form action="pas2-resultat.php" method="get">
+
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom">
+
+        <label for="correu">Correu</label>
+        <input id="correu" name="correu" type="email">
+
+        <label for="dia">Dia</label>
+        <select id="dia" name="dia">
+            <option value="divendres">Divendres</option>
+            <option value="dissabte">Dissabte</option>
+        <button type="submit">Enviar</button>
+        </select>
+    </form>
+
+</body>
+</html>

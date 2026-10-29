@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+fieldset {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Les etiquetes a sobre del camp, cadascuna a la seva línia */
+label {
+    display: block;
+    margin-top: .7rem;
+    margin-bottom: .2rem;
+}
+
+label.linia {
+    margin: .3rem 0;
+}
+
+/* Que tots els camps facin la mateixa amplada */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="date"], input[type="tel"], select {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: .7rem;
+    background: #2a7f62;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d5c46;
+}
+
+/* Taula del resum */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background: #2a7f62;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background: #F4F7F7;
+}
+
+.errors {
+    background: #fdeaea;
+    border: 1px solid #d33;
+    padding: 1rem;
+    border-radius: 6px;
+}
