@@ -1,0 +1,5 @@
+body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem; }
+header, footer { background: #004474; color: #fff; padding: 1rem; margin: 1rem 0; }
+.graella { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+.targeta { border: 1px solid #ccc; padding: 1rem; border-radius: 6px; }
+.missatge { background: #fff3cd; padding: 1rem; }
