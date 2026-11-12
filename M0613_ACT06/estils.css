@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 1rem; }
+header, footer { text-align: center; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: .4rem; text-align: left; }
+.errors { color: #b00020; }
+.ok { background: #e6f4ea; padding: .5rem 1rem; }
+.tornar { display: inline-block; margin-top: 1rem; }
